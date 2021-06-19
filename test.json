@@ -1,0 +1,45 @@
+{
+  "columns": [
+    {
+      "name": "firmAccount",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "accountNumber",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "ownershipType",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    }
+  ],
+  "rows": [
+    {
+      "values": [
+        "",
+        "101150036",
+        "Corporation_Partnership_Unincorporated_Associations"
+
+      ]
+    },
+    {
+      "values": [
+        "",
+        "101150036",
+        "Corporation_Partnership_Unincorporated_Associations"
+
+      ]
+    },
+    {
+      "values": [
+        "",
+        "101150036",
+        "Corporation_Partnership_Unincorporated_Associations"
+
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "columns": [
+    {
+      "name": "firmAccount",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "accountNumber",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "ownershipType",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "numUniqueBeneficiaries",
+      "type": "Integer",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "brokerName",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "business",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "businessOner",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "totalBalance",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "usdEquivalent",
+      "type": "Float",
+      "metaType": "PrimitiveType"
+    }
+  ],
+  "rows": [
+    {
+      "values": [
+        "",
+        "101150036",
+        "Corporation_Partnership_Unincorporated_Associations",
+        1,
+        "Client04",
+        "IBDA",
+        "null",
+        74000000.0,
+        "USD",
+        "TDA",
+        "1621762",
+        "133260245",
+        "Y",
+        "2",
+        "EMPLOYER IDENTIFICATION NUMBER",
+        74000000.0
+      ]
+    }
+  ]
+}
