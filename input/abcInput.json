@@ -1,0 +1,45 @@
+{
+  "columns": [
+    {
+      "name": "companyAccount",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "accountID",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    },
+    {
+      "name": "typeOfAccount",
+      "type": "String",
+      "metaType": "PrimitiveType"
+    }
+  ],
+  "rows": [
+    {
+      "values": [
+        "abcd",
+        "12345678",
+        "Checkings acct"
+
+      ]
+    },
+    {
+      "values": [
+        "",
+        "56742567",
+        "Savings acct"
+
+      ]
+    },
+    {
+      "values": [
+        "",
+        "22244422332",
+        "Joint acct"
+
+      ]
+    }
+  ]
+}

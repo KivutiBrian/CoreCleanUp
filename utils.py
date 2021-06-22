@@ -1,4 +1,9 @@
-import json
+import json, os
+
+settings_dir = os.path.dirname(__file__)
+PROJECT_ROOT = os.path.abspath(os.path.dirname(settings_dir))
+
+output_folder = os.path.join(PROJECT_ROOT, "output/")
 
 def clean_data(file_name:str) ->list:
 
@@ -25,6 +30,21 @@ def clean_data(file_name:str) ->list:
         data_clean.append(dict(n))
 
     return data_clean
+
+def process_to_output(ls):
+
+    new_output = []
+
+    for each in ls:
+        values = list(each.values())
+        new_dict = {"name": values[0], "accountNumber": values[1], "type": values[2]}
+        new_output.append(new_dict)
+
+    with open(output_folder+"cleandata.json", "w") as c:
+        json.dump(new_output, c)
+
+    return new_output
+
 
 
 
