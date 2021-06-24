@@ -53,6 +53,11 @@ def process_to_output(ls):
 def standard_process_to_output(ls):
     new_output = []
 
+    """
+    Loop over the combined key value pairs
+    check if a key is present in the new dict created
+    initialize a list of new keys and zip it to old values  
+    """
     for each in ls:
         key_list = list(each.keys())
         if "companyAccount" in key_list:
