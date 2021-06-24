@@ -1,4 +1,5 @@
 import json, os
+from collections import OrderedDict
 
 settings_dir = os.path.dirname(__file__)
 PROJECT_ROOT = os.path.abspath(os.path.dirname(settings_dir))
@@ -18,8 +19,10 @@ def clean_data(file_name:str) ->list:
     columns = data['columns']
     rows = data['rows']
 
-    # get column names only
+    keyys = list(columns[0].keys())
 
+
+    # get column names only
     for i in columns:
         col_names.append(i['name'])
 
@@ -30,6 +33,7 @@ def clean_data(file_name:str) ->list:
         data_clean.append(dict(n))
 
     return data_clean
+
 
 def process_to_output(ls):
 
@@ -45,6 +49,31 @@ def process_to_output(ls):
 
     return new_output
 
+
+def standard_process_to_output(ls):
+    new_output = []
+
+    for each in ls:
+        key_list = list(each.keys())
+        if "companyAccount" in key_list:
+            new_keys = ["account", "accountNumber", "accountType"]
+            new = dict(zip(new_keys, each.values()))
+            new_output.append(new)
+
+        if "firmAccount" in key_list:
+            new_keys = ["account", "accountNumber", "accountType"]
+            new = dict(zip(new_keys, each.values()))
+            new_output.append(new)
+
+        if "newAccount" in key_list:
+            new_keys = ["accountType","accountNumber","account"]
+            new = dict(zip(new_keys, each.values()))
+            new_output.append(new)
+
+        with open(output_folder + "cleandata.json", "w") as c:
+            json.dump(new_output, c)
+
+    return new_output
 
 
 

@@ -1,0 +1,45 @@
+{
+  "columns": [
+    {
+      "metaType": "PrimitiveType",
+      "type": "String",
+      "name": "accountTypes"
+    },
+    {
+      "metaType": "PrimitiveType",
+      "type": "String",
+      "name": "numberOfAccount"
+    },
+    {
+      "metaType": "PrimitiveType",
+      "type": "String",
+      "name": "newAccount"
+    }
+  ],
+  "rows": [
+    {
+      "values": [
+        "Single Acct",
+        "101",
+        "Bob's Acct"
+
+      ]
+    },
+    {
+      "values": [
+        "Triple Owner Acct",
+        "333",
+        "John's Acct"
+
+      ]
+    },
+    {
+      "values": [
+        "Joint Acct",
+        "777",
+        "Apple's Acct"
+
+      ]
+    }
+  ]
+}
